@@ -1,0 +1,80 @@
+body{
+	background-color: #777777;
+}
+
+#stage{
+	position:absolute;
+	top:50%;
+	left:50%;
+	height: 600px;
+	width: 800px;
+	margin: -300px 0 0 -400px;
+	overflow: hidden;
+	background-color: #ffffff;
+	font: bold 70pt/70pt Arial
+}
+
+#txt1{
+	position:absolute;
+	top:80px;
+	left:270px;
+}
+
+#txt2{
+	position:absolute;
+	top:150px;
+	left:270px;
+}
+
+#txt3{
+	position:absolute;
+	top:220px;
+	left:270px;
+}
+
+.imgs{
+position:absolute;
+width:98px;
+height:98px;
+top:500px;
+}
+
+#img1{
+background-image: url(img/flower1.png);
+left:0px;
+}
+
+#img2{
+background-image: url(img/flower2.png);
+left:100px;
+}
+
+#img3{
+background-image: url(img/flower3.png);
+left:200px;
+}
+
+#img4{
+background-image: url(img/flower4.png);
+left:300px;
+}
+
+#img5{
+background-image: url(img/flower5.png);	
+left:400px;
+}
+
+#img6{
+background-image: url(img/flower6.png);
+left:500px;	
+}
+
+#img7{
+background-image: url(img/flower7.png);	
+left:600px;
+}
+
+#img8{
+background-image: url(img/flower8.png);	
+left:700px;
+}
