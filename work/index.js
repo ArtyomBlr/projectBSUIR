@@ -396,36 +396,130 @@ circleAdd2.graphics
 
 TweenMax.to(circleAdd2, 0.5, {scaleX:0.6, scaleY:0.6, ease: Power1.easeInOut, delay: 5.3});
 TweenMax.to(circleAdd2, 0.1, {alpha: 0, ease: Power1.easeInOut, delay: 5.7});
+TweenMax.to(rect, 1.5, {scaleX:6, scaleY:6, ease: Power1.easeInOut, delay: 5.8});
 
+// rectangle with text
 
-
-
-/*var rect1 = new createjs.Shape();
-stage.addChild(rect1);
-rect1.x = 400;
-rect1.y = 300;
-rect1.regX = 75;
-rect1.regY = 75;
+var rectP = new createjs.Shape();
+stage.addChild(rectP);
+rectP.x = 200;
+rectP.y = 250;
 
 var a = {
-	p0x: 75,
-	p0y: -32,
-	p1x: 160,
-	p1y: 50,
-	p2x: 120,
-	p2y: 160,
-	p3x: 10,
-	p3y: 180,
-	p4x: -61,
-	p4y: 40
+	p0x: 0,
+	p0y: 0,
+	p1x: 400,
+	p1y: 0,
+	p2x: 400,
+	p2y: 0,
+	p3x: 0,
+	p3y: 0,
 };
 
-rect1.graphics
-.beginFill("red")
+rectP.graphics
+.beginFill("#E3AFFC")
 .mt(a.p0x, a.p0y)
 .lt(a.p1x, a.p1y)
 .lt(a.p2x, a.p2y)
 .lt(a.p3x, a.p3y)
-.lt(a.p4x, a.p4y)
 .cp()
-.endFill();*/
+.endFill();
+
+TweenMax.to(a, 1.1, {
+	p2x: 400,
+	p2y: 100,
+	p3x: 0,
+	p3y: 100,
+	onUpdate: function () {
+		rectP.graphics
+		.clear()
+		.beginFill("#E3AFFC")
+		.mt(a.p0x, a.p0y).lt(a.p1x, a.p1y).lt(a.p2x, a.p2y).lt(a.p3x, a.p3y).cp()
+		.cp()
+		.endStroke();
+		}, delay: 7
+});
+
+// rectangle with text
+
+var rectpu = new createjs.Shape();
+stage.addChild(rectpu);
+rectpu.x = 200;
+rectpu.y = 250;
+
+var a2 = {
+	p0x: 0,
+	p0y: 0,
+	p1x: 400,
+	p1y: 0,
+	p2x: 400,
+	p2y: 0,
+	p3x: 0,
+	p3y: 0,
+};
+
+rectpu.graphics
+.beginFill("#8A6897")
+.mt(a2.p0x, a2.p0y)
+.lt(a2.p1x, a2.p1y)
+.lt(a2.p2x, a2.p2y)
+.lt(a2.p3x, a2.p3y)
+.cp()
+.endFill();
+
+TweenMax.to(a2, 1, {
+	p2x: 400,
+	p2y: 100,
+	p3x: 0,
+	p3y: 100,
+	onUpdate: function () {
+		rectpu.graphics
+		.clear()
+		.beginFill("#8A6897")
+		.mt(a2.p0x, a2.p0y).lt(a2.p1x, a2.p1y).lt(a2.p2x, a2.p2y).lt(a2.p3x, a2.p3y).cp()
+		.cp()
+		.endStroke();
+		}, delay: 7.1
+});
+
+// rectangle with text
+
+var rectT = new createjs.Shape();
+stage.addChild(rectT);
+rectT.x = 200;
+rectT.y = 250;
+
+var a1 = {
+	p0x: 0,
+	p0y: 0,
+	p1x: 400,
+	p1y: 0,
+	p2x: 400,
+	p2y: 0,
+	p3x: 0,
+	p3y: 0,
+};
+
+rectT.graphics
+.beginFill("#3D3A3D")
+.mt(a1.p0x, a1.p0y)
+.lt(a1.p1x, a1.p1y)
+.lt(a1.p2x, a1.p2y)
+.lt(a1.p3x, a1.p3y)
+.cp()
+.endFill();
+
+TweenMax.to(a1, 1, {
+	p2x: 400,
+	p2y: 100,
+	p3x: 0,
+	p3y: 100,
+	onUpdate: function () {
+		rectT.graphics
+		.clear()
+		.beginFill("#3D3A3D")
+		.mt(a1.p0x, a1.p0y).lt(a1.p1x, a1.p1y).lt(a1.p2x, a1.p2y).lt(a1.p3x, a1.p3y).cp()
+		.cp()
+		.endStroke();
+		}, delay: 7.2
+});
