@@ -523,3 +523,69 @@ TweenMax.to(a1, 1, {
 		.endStroke();
 		}, delay: 7.2
 });
+
+// add Text 
+
+var text= new createjs.Text("Artyom Z", "300 70px sans-serif", "white");
+stage.addChild(text);
+text.x = 270;
+text.y = 285;
+text.alpha = 0;
+
+TweenMax.to(text, 0.7, {alpha: 1, y: 270, ease: Power1.easeInOut, delay: 7.7});
+
+// last circles 
+
+var lastCircle1 = new createjs.Shape();
+stage.addChild(lastCircle1);
+lastCircle1.x = 620;
+lastCircle1.y = 200;
+lastCircle1.scaleX = 0;
+lastCircle1.scaleY = 0;
+
+
+lastCircle1.graphics
+.beginStroke("#F2B332")
+.setStrokeStyle(15)
+.drawCircle(0, 0, 100)
+.endStroke();
+
+TweenMax.to(lastCircle1, 0.7, {scaleX:0.4, scaleY:0.4, ease: Power1.easeInOut, delay: 7.8});
+TweenMax.to(lastCircle1, 0.3, {alpha: 0, ease: Power1.easeInOut, delay: 8.2});
+
+// last circles 2
+
+var lastCircle2 = new createjs.Shape();
+stage.addChild(lastCircle2);
+lastCircle2.x = 700;
+lastCircle2.y = 240;
+lastCircle2.scaleX = 0;
+lastCircle2.scaleY = 0;
+
+lastCircle2.graphics
+.beginStroke("#F13C2D")
+.setStrokeStyle(25)
+.setStrokeDash([4, 18], 22)
+.drawCircle(0, 0, 100)
+.endStroke();
+
+TweenMax.to(lastCircle2, 0.7, {scaleX:1.5, scaleY:1.5, ease: Power1.easeInOut, delay: 7.7});
+TweenMax.to(lastCircle2, 0.2, {alpha: 0, ease: Power1.easeInOut, delay: 8.2});
+
+// last circles 3
+
+var lastCircle3 = new createjs.Shape();
+stage.addChild(lastCircle3);
+lastCircle3.x = 700;
+lastCircle3.y = 240;
+lastCircle3.scaleX = 0;
+lastCircle3.scaleY = 0;
+
+lastCircle3.graphics
+.beginStroke("#3D3A3D")
+.setStrokeStyle(20)
+.drawCircle(0, 0, 100)
+.endStroke();
+
+TweenMax.to(lastCircle3, 0.6, {scaleX:1, scaleY:1, ease: Power1.easeInOut, delay: 8});
+TweenMax.to(lastCircle3, 0.2, {alpha: 0, ease: Power1.easeInOut, delay: 8.4});
