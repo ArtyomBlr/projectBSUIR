@@ -99,7 +99,6 @@ tl.to(triangle3, 1, {y: 250, ease: Power1.easeInOut});*/
 
 // circle
 
-
 var circleDash = new createjs.Shape();
 stage.addChild(circleDash);
 circleDash.x = 427;
@@ -216,9 +215,187 @@ TweenMax.to(rectbesie, 1, {
 		}, delay: 4.8
 });
 
+TweenMax.to(rect, 2, {rotation: 1, ease: Power1.easeInOut, delay: 4.8});
 
 
+// circleAdditional1
 
+var circleAdd1 = new createjs.Shape();
+stage.addChild(circleAdd1);
+circleAdd1.x = 400;
+circleAdd1.y = 300;
+circleAdd1.scaleX = 0;
+circleAdd1.scaleY = 0;
+circleAdd1.regX = 75;
+circleAdd1.regY = 75;
+
+var b1 = {
+	cAp0x0: 42,
+	cAp0y0: -42,
+	cAp0x1: 108,
+	cAp0y1: -42,
+	cAp1x0: 192,
+	cAp1y0: 42,
+	cAp1x1: 192,
+	cAp1y1: 108,
+	cAp2x0: 108,
+	cAp2y0: 192,
+	cAp2x1: 42,
+	cAp2y1: 192,
+	cAp3x0: -42,
+	cAp3y0: 108,
+	cAp3x1: -42,
+	cAp3y1: 42,
+};
+
+circleAdd1.graphics
+.beginStroke("#FFAB65")
+.setStrokeStyle(8)
+.mt(0, 0)
+.bt(b1.cAp0x0, b1.cAp0y0, b1.cAp0x1, b1.cAp0y1, 150, 0)
+.bt(b1.cAp1x0, b1.cAp1y0, b1.cAp1x1, b1.cAp1y1, 150, 150)
+.bt(b1.cAp2x0, b1.cAp2y0, b1.cAp2x1, b1.cAp2y1, 0, 150)
+.bt(b1.cAp3x0, b1.cAp3y0, b1.cAp3x1, b1.cAp3y1, 0, 0)
+.cp()
+.endStroke();
+
+TweenMax.to(circleAdd1, 0.5, {scaleX:1.1, scaleY:1.1, ease: Power1.easeInOut, delay: 5});
+TweenMax.to(circleAdd1, 0.3, {alpha: 0, ease: Power1.easeInOut, delay: 5.5});
+
+
+// circleAdditional3
+
+var circleAdd3 = new createjs.Shape();
+stage.addChild(circleAdd3);
+circleAdd3.x = 430;
+circleAdd3.y = 200;
+circleAdd3.scaleX = 0;
+circleAdd3.scaleY = 0;
+circleAdd3.regX = 75;
+circleAdd3.regY = 75;
+
+var b3 = {
+	cCp0x0: 42,
+	cCp0y0: -42,
+	cCp0x1: 108,
+	cCp0y1: -42,
+	cCp1x0: 192,
+	cCp1y0: 42,
+	cCp1x1: 192,
+	cCp1y1: 108,
+	cCp2x0: 108,
+	cCp2y0: 192,
+	cCp2x1: 42,
+	cCp2y1: 192,
+	cCp3x0: -42,
+	cCp3y0: 108,
+	cCp3x1: -42,
+	cCp3y1: 42,
+};
+
+circleAdd3.graphics
+.beginStroke("#CCC5C4")
+.setStrokeStyle(24)
+.mt(0, 0)
+.bt(b3.cCp0x0, b3.cCp0y0, b3.cCp0x1, b3.cCp0y1, 150, 0)
+.bt(b3.cCp1x0, b3.cCp1y0, b3.cCp1x1, b3.cCp1y1, 150, 150)
+.bt(b3.cCp2x0, b3.cCp2y0, b3.cCp2x1, b3.cCp2y1, 0, 150)
+.bt(b3.cCp3x0, b3.cCp3y0, b3.cCp3x1, b3.cCp3y1, 0, 0)
+.cp()
+.endStroke();
+
+TweenMax.to(circleAdd3, 0.4, {scaleX:0.25, scaleY:0.25, ease: Power1.easeInOut, delay: 5.3});
+TweenMax.to(circleAdd3, 0.1, {alpha: 0, ease: Power1.easeInOut, delay: 5.6});
+
+
+// circleAdditional4
+
+var circleAdd4 = new createjs.Shape();
+stage.addChild(circleAdd4);
+circleAdd4.x = 490;
+circleAdd4.y = 330;
+circleAdd4.scaleX = 0;
+circleAdd4.scaleY = 0;
+circleAdd4.regX = 75;
+circleAdd4.regY = 75;
+
+var b4 = {
+	cDp0x0: 42,
+	cDp0y0: -42,
+	cDp0x1: 108,
+	cDp0y1: -42,
+	cDp1x0: 192,
+	cDp1y0: 42,
+	cDp1x1: 192,
+	cDp1y1: 108,
+	cDp2x0: 108,
+	cDp2y0: 192,
+	cDp2x1: 42,
+	cDp2y1: 192,
+	cDp3x0: -42,
+	cDp3y0: 108,
+	cDp3x1: -42,
+	cDp3y1: 42,
+};
+
+circleAdd4.graphics
+.beginStroke("#2F3841")
+.setStrokeStyle(24)
+.mt(0, 0)
+.bt(b4.cDp0x0, b4.cDp0y0, b4.cDp0x1, b4.cDp0y1, 150, 0)
+.bt(b4.cDp1x0, b4.cDp1y0, b4.cDp1x1, b4.cDp1y1, 150, 150)
+.bt(b4.cDp2x0, b4.cDp2y0, b4.cDp2x1, b4.cDp2y1, 0, 150)
+.bt(b4.cDp3x0, b4.cDp3y0, b4.cDp3x1, b4.cDp3y1, 0, 0)
+.cp()
+.endStroke();
+
+TweenMax.to(circleAdd4, 0.4, {scaleX:0.3, scaleY:0.3, ease: Power1.easeInOut, delay: 5.3});
+TweenMax.to(circleAdd4, 0.1, {alpha: 0, ease: Power1.easeInOut, delay: 5.7});
+
+
+// circleAdditional2
+
+var circleAdd2 = new createjs.Shape();
+stage.addChild(circleAdd2);
+circleAdd2.x = 300;
+circleAdd2.y = 300;
+circleAdd2.scaleX = 0;
+circleAdd2.scaleY = 0;
+circleAdd2.regX = 75;
+circleAdd2.regY = 75;
+
+var b2 = {
+	cBp0x0: 42,
+	cBp0y0: -42,
+	cBp0x1: 108,
+	cBp0y1: -42,
+	cBp1x0: 192,
+	cBp1y0: 42,
+	cBp1x1: 192,
+	cBp1y1: 108,
+	cBp2x0: 108,
+	cBp2y0: 192,
+	cBp2x1: 42,
+	cBp2y1: 192,
+	cBp3x0: -42,
+	cBp3y0: 108,
+	cBp3x1: -42,
+	cBp3y1: 42,
+};
+
+circleAdd2.graphics
+.beginStroke("#4E7984")
+.setStrokeStyle(10)
+.mt(0, 0)
+.bt(b2.cBp0x0, b2.cBp0y0, b2.cBp0x1, b2.cBp0y1, 150, 0)
+.bt(b2.cBp1x0, b2.cBp1y0, b2.cBp1x1, b2.cBp1y1, 150, 150)
+.bt(b2.cBp2x0, b2.cBp2y0, b2.cBp2x1, b2.cBp2y1, 0, 150)
+.bt(b2.cBp3x0, b2.cBp3y0, b2.cBp3x1, b2.cBp3y1, 0, 0)
+.cp()
+.endStroke();
+
+TweenMax.to(circleAdd2, 0.5, {scaleX:0.6, scaleY:0.6, ease: Power1.easeInOut, delay: 5.3});
+TweenMax.to(circleAdd2, 0.1, {alpha: 0, ease: Power1.easeInOut, delay: 5.7});
 
 
 
